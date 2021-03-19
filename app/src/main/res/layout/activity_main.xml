@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:layout_weight="1"
+        android:textSize="40dp"
+        android:gravity="right|center"
+        android:inputType="number"
+        android:text="0" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonAC"
+                android:text="AC"
+                android:onClick="acPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonPlus"
+                android:text="+"
+                android:onClick="operatorPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonMinus"
+                android:text="-"
+                android:onClick="operatorPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonMultiply"
+                android:text="*"
+                android:onClick="operatorPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonNine"
+                android:text="9"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonEight"
+                android:text="8"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonSeven"
+                android:text="7"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonDivide"
+                android:text="/"
+                android:onClick="operatorPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonSix"
+                android:text="6"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonFive"
+                android:text="5"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonFour"
+                android:text="4"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonPercent"
+                android:text="%"
+                android:onClick="percentPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonThree"
+                android:text="3"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonTwo"
+                android:text="2"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonOne"
+                android:text="1"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonPlusMinus"
+                android:text="+/-"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonZero"
+                android:text="0"
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonDot"
+                android:text="."
+                android:onClick="numberPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/buttonEqual"
+                android:text="="
+                android:onClick="equalPressed"
+                android:layout_height="30pt"
+                android:layout_width="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+</LinearLayout>
